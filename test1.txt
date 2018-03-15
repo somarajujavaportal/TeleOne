@@ -1,8 +1,5 @@
 firstline1
-
 secondline2
 ThirdLine3
-
 secondlineTwo
 ThirdLineThree
-
