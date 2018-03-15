@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema targetNamespace="http://www.dxc.com/request/" xmlns="http://www.w3.org/2001/XMLSchema"
+	xmlns:tns="http://www.dxc.com/request/">
+	<element name="TxSurrender" type="tns:TxSurrender"></element>
+
+	<complexType name="TxSurrender">
+		<sequence>
+			<element name="IndexedData" type="tns:IndexedData"></element>
+			<element name="WMAData" type="tns:WMAData"></element>
+			<element name="TranDetails" type="tns:TranDetails"></element>
+		</sequence>
+	</complexType>
+	<complexType name="IndexedData">
+		<sequence>
+			<element name="PolNumber" type="string" maxOccurs="1"
+				minOccurs="1">
+			</element>
+			<element name="FirstName" type="string" maxOccurs="1"
+				minOccurs="1">
+			</element>
+			<element name="LastName" type="string" maxOccurs="1"
+				minOccurs="1">
+			</element>
+			<element name="GovtID" type="string" maxOccurs="1" minOccurs="1">
+			</element>
+			<element name="TransSubType" type="string" maxOccurs="1"
+				minOccurs="1">
+			</element>
+			<element name="LineOfBusiness" type="string" maxOccurs="1"
+				minOccurs="1">
+			</element>
+			<element name="ProductCode" type="string" maxOccurs="1"
+				minOccurs="1"></element>
+		</sequence>
+	</complexType>
+
+	<complexType name="WMAData">
+		<sequence>
+			<element name="PolNumber" type="string" maxOccurs="1"
+				minOccurs="1">
+			</element>
+			<element name="TransRefGUID" type="string" maxOccurs="1"
+				minOccurs="1">
+			</element>
+			<element name="TransType" type="string" maxOccurs="1"
+				minOccurs="1">
+			</element>
+			<element name="TransExeDate" type="string" maxOccurs="1"
+				minOccurs="1">
+			</element>
+			<element name="TransExeTime" type="string" maxOccurs="1"
+				minOccurs="1">
+			</element>
+			<element name="PaymentForm" type="string" maxOccurs="1"
+				minOccurs="1">
+			</element>
+			<element name="TaxWithholdingType" type="string" maxOccurs="1"
+				minOccurs="1">
+			</element>
+			<element name="FirstName" type="string" maxOccurs="1"
+				minOccurs="1">
+			</element>
+			<element name="LastName" type="string" maxOccurs="1"
+				minOccurs="1">
+			</element>
+			<element name="AddressTypeCode" type="string" maxOccurs="1"
+				minOccurs="1">
+			</element>
+			<element name="Line1" type="string" maxOccurs="1" minOccurs="1">
+			</element>
+			<element name="City" type="string" maxOccurs="1" minOccurs="1">
+			</element>
+			<element name="AddressStateTC" type="string" maxOccurs="1"
+				minOccurs="1">
+			</element>
+			<element name="Zip" type="string" maxOccurs="1" minOccurs="1">
+			</element>
+		</sequence>
+	</complexType>
+
+	<complexType name="TranDetails">
+		<sequence>
+			<element name="TransRefGUID" type="string" maxOccurs="1"
+				minOccurs="1">
+			</element>
+			<element name="TranID" type="string" maxOccurs="1" minOccurs="1">
+			</element>
+			<element name="TransExeDate" type="string" maxOccurs="1"
+				minOccurs="1">
+			</element>
+			<element name="TransExeTime" type="string" maxOccurs="1"
+				minOccurs="1">
+			</element>
+			<element name="TransType" type="string" maxOccurs="1"
+				minOccurs="1">
+			</element>
+			<element name="ResultCode" type="string" maxOccurs="1"
+				minOccurs="1">
+			</element>
+			<element name="ResultDescription" type="string" maxOccurs="1"
+				minOccurs="1">
+			</element>
+		</sequence>
+	</complexType>
+</schema>
